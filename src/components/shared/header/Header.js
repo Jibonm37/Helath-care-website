@@ -5,9 +5,10 @@ import logo from '../../../img/logo.png'
 import { HashLink } from 'react-router-hash-link';
 import './header.css'
 import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
-  const {user ,logOut} = useFirebase();
+  const {user ,logOut} = useAuth();
 
     return (
         <Navbar  collapseOnSelect expand="lg" sticky='top'  className='header-div py-1' >
@@ -25,7 +26,7 @@ const Header = () => {
             <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
             }
         <Navbar.Text className='text-light'>
-            <span className='text-danger me-2'>Signed in as:</span>{user.displayName} <a href="#login"></a>
+            <span className='text-info me-2 fs-4'>Signed in as:</span>{user.displayName} <a href="#login"></a>
         </Navbar.Text>
         </Navbar.Collapse>
 

@@ -10,11 +10,14 @@ import Notfound from './components/404/Notfound';
 import Coaches from './components/coaches/Coaches';
 import Login from './components/shared/login/Login';
 import ServiceDetail from './components/Services/service/serviceDetail/ServiceDetail';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/shared/login/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+     <AuthProvider>
+     <BrowserRouter>
       <Header></Header>
       
       
@@ -29,15 +32,16 @@ function App() {
         <Route path='/services'>
           <Services></Services>
         </Route>
-        <Route path ='/coaches'>
+        <PrivateRoute path ='/coaches'>
           <Coaches></Coaches>
-        </Route>
+        </PrivateRoute>
+
         <Route path='/login'>
           <Login></Login>
         </Route>
-        <Route path='/service/:index'>
+        <PrivateRoute path='/service/:index'>
           <ServiceDetail></ServiceDetail>
-        </Route>
+        </PrivateRoute>
 
         <Route path='*'>
          <Notfound></Notfound>
@@ -45,6 +49,7 @@ function App() {
       </Switch>
       <Footer></Footer>
       </BrowserRouter>
+     </AuthProvider>
     </div>
   );
 }

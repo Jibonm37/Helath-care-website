@@ -1,5 +1,6 @@
 import React from 'react';
 import { ButtonGroup, Form } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
 import useFirebase from '../../../hooks/useFirebase';
 import firbaseInitialize from '../../FIREBASE/firebase.init';
 import './Login.css'
@@ -7,7 +8,7 @@ firbaseInitialize()
 
 const Login = () => {
   const {user,signInGoogle,handleNewUser,handlePassword,
-    handleEmail} = useFirebase()
+    handleEmail} = useAuth()
  
 
 

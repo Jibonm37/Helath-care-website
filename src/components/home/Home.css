@@ -1,0 +1,8 @@
+.home-div{
+    background-image:url('../../img/background.jpg');
+  
+    width: 100%;
+   background-size: auto;
+   padding-right: 100px;
+    background-repeat: no-repeat;
+}

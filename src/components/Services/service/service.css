@@ -1,0 +1,11 @@
+.service{
+    background-color: gray;
+}
+.service-div{
+    background: url('../../../img/background.jpg');
+    background-repeat: no-repeat;
+}
+.service-img{
+    width: 100%;
+    height: 60%;
+}

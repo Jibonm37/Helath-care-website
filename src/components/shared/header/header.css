@@ -1,0 +1,13 @@
+.header-div{
+   
+    background-color: rgb(79, 25, 100);
+}
+.header-div a{
+   
+    color: whitesmoke;
+    font-size: 25px;
+}
+.header-img{
+    width: 150px;
+    height: 100px;
+}

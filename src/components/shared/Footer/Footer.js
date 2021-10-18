@@ -20,10 +20,21 @@ const Footer = () => {
                 
             </div>
             <div className='col text-light'>
-                <h3 className='fs-6 mb-4'>E</h3>
-                <h3 className='fs-6 mb-4'>PRIVAY</h3>
-                <h3 className='fs-6 mb-4'>TERMS </h3>
-                <h3 className='fs-6 mb-4'>SITE</h3>
+                <a target='_blank' href='https://www.facebook.com/jibon.jibonraz.5' className='fs-2 mb-4'>
+                <i class="fab fa-facebook"></i>
+                </a>
+                <br />
+                <a target='_blank' href=''  className='fs-2 mb-4 text-danger'>
+                <i class="far fa-envelope"></i>
+                    </a>
+                    <br />
+                <a target='_blank' href='https://twitter.com/jibonarhasan'  className='fs-2 mb-4 text-info'>
+                <i class="fab fa-twitter"></i>
+                </a>
+                <br />
+                <a target='_blank' href='https://github.com/Jibonm37'  className='fs-2 mb-4 '>
+                <i class="fab fa-github"></i>
+                    </a>
                 
             </div>
           </div>

@@ -6,34 +6,38 @@ import './Login.css'
 firbaseInitialize()
 
 const Login = () => {
-  const {user,signInGoogle} = useFirebase()
-  console.log(user)
+  const {user,signInGoogle,handleNewUser,handlePassword,
+    handleEmail} = useFirebase()
+ 
 
 
     return (
-        <div>
-          {/* <Form className='m-5 p-5'>
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label className='text-light'>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    
-  </Form.Group>
-
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label className='text-light'>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check className='text-light' type="checkbox" label="Already Exist?" />
-  </Form.Group>
-  
-  <ButtonGroup variant="primary" className='bg-warning p-2 rounded mt-2' type="submit">
-    Log In
-  </ButtonGroup>
-</Form> */}
-
-
-    <button onClick={signInGoogle}> Sign in with Google</button>
+        <div className='py-5'>
+          <form onSubmit={handleNewUser} className='mx-5 px-5 mt-5 py-5 '>
+  <div className="row mb-3">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label text-light">Email</label>
+    <div className="col-sm-10">
+      <input type="email" required onBlur={handleEmail}  placeholder='Your Email' className="form-control w-75" id="inputEmail3"/>
+    </div>
+  </div>
+  <div className="row mb-3">
+    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label text-light">Password</label>
+    <div className="col-sm-10">
+      <input type="password" required onBlur={handlePassword} placeholder='Your Password' className="form-control w-75" id="inputPassword3"/>
+    </div>
+  </div>
+ 
+  <div className="row mb-3">
+    <div className="col-sm-10 offset-sm-2">
+      
+    </div>
+  </div>
+  <button type="submit" className="btn btn-primary">Sign in</button>
+</form>
+     
+      <div className='mb-5'>
+      <a className='mb-3 text-success ' onClick={signInGoogle}> Sign in with Google</a>
+      </div>
         </div>
   
 

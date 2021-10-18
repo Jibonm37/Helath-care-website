@@ -8,7 +8,7 @@ import useFirebase from '../../../hooks/useFirebase';
 
 const Header = () => {
   const {user ,logOut} = useFirebase();
-  
+
     return (
         <Navbar  collapseOnSelect expand="lg" sticky='top'  className='header-div py-1' >
         <Container>
@@ -20,10 +20,12 @@ const Header = () => {
           <Nav.Link as={HashLink} to="/services" >Services</Nav.Link>
           <Nav.Link as={HashLink} to="/coaches">Coaches</Nav.Link>
           
-          <Button  variant="dark" onClick={logOut} className='bg-transparent'> Log Out</Button> 
+        { user.email?
+         <Button  variant="dark" onClick={logOut} className='bg-transparent'> Log Out</Button> :
             <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
+            }
         <Navbar.Text className='text-light'>
-            Signed in as: <a href="#login"></a>
+            <span className='text-danger me-2'>Signed in as:</span>{user.displayName} <a href="#login"></a>
         </Navbar.Text>
         </Navbar.Collapse>
 

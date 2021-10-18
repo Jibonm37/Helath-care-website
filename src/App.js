@@ -9,6 +9,7 @@ import Services from './components/Services/Services';
 import Notfound from './components/404/Notfound';
 import Coaches from './components/coaches/Coaches';
 import Login from './components/shared/login/Login';
+import ServiceDetail from './components/Services/service/serviceDetail/ServiceDetail';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route path='/login'>
           <Login></Login>
+        </Route>
+        <Route path='/service/:index'>
+          <ServiceDetail></ServiceDetail>
         </Route>
 
         <Route path='*'>

@@ -17,8 +17,9 @@ const Services = () => {
            
           
                {
-                   services.map(service => <Service
-                   key = {service._id}
+                   services.map((service ,i) => <Service
+                   index={i}
+                   key = {i}
                    service = {service}
                    ></Service>)
                }

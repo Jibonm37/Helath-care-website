@@ -6,3 +6,21 @@
    padding-right: 100px;
     background-repeat: no-repeat;
 }
+.home-heading{
+   font-family: 'IM Fell English SC', serif; 
+}
+.part1{
+    font-size: 100px;
+    /* padding: 80px 50px; */
+    padding-top: 100px;
+}
+.part2{
+    font-size: 100px;
+    color: coral;
+}
+.part3{
+    font-size: 20px;
+}
+.gym-heading{
+    padding-bottom: 50px;
+}

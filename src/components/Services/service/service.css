@@ -9,3 +9,16 @@
     width: 100%;
     height: 60%;
 }
+.desc{
+    font-family: 'Lobster', cursive;
+}
+.name{
+    color:lightcoral;
+}
+.para{
+    color: lightblue;
+}
+.buy-btn{
+    background-color:lightsteelblue;
+    
+}

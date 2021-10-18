@@ -1,9 +1,17 @@
+*{
+    /* font-family: 'IM Fell English SC', serif; */
+    /* font-family: 'Lobster', cursive; */
+}
+
+
+
 .header-div{
    
     background-color: rgb(79, 25, 100);
+
 }
 .header-div a{
-   
+   font-family: 'IM Fell English SC', serif;
     color: whitesmoke;
     font-size: 25px;
 }

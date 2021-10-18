@@ -48,14 +48,18 @@ const Home = () => {
 
 
 
-           <div className='py-5'>
+           {/* <div className='py-5'>
            <h1 className='pt-5 text-light text-'>Let's <span className='text-success'> Do This,</span> <span className='text-primary'>Together​</span></h1>
-           </div>
+           </div> */}
 
 
-            <div className='pb-5 mb-4'>
-            <h3 className='text-light mt-5 pt-5'>Join a welcoming gym that exists <span className='text-warning'>to help you get to a healthier place</span> - by giving the right support at the right times, in the ways you want.</h3>
+            <div className='pb-5 mb-4 gym-heading'>
+            <h1   className=' text-light services-heading part1'>EX <span className='services-heading part2'>TREME</span></h1>
+            <h2 className='part3'>WORKOUT WITH US</h2>
             </div>
+
+
+            
         </div>
     );
 };

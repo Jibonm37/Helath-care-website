@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
                 <div className='text-light mt-5 pt-5'>
-                    <h1 className='fs-2 mt-5 pt-4 footer-name'>
+                    <h1 className='fs-2 mt-5 pt-4 footer-name services-heading'>
                     <span className='fs-4 text-danger'>&copy; </span> 
                         GYM EXTREME <span className='fs-3 text-info'>2021</span>. All rights reserved.
                     

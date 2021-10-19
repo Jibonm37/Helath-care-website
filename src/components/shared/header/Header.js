@@ -26,7 +26,7 @@ const Header = () => {
             <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
             }
         <Navbar.Text className='text-light'>
-            <span className='text-info me-2 fs-4'>Signed in as:</span>{user.displayName} <a href="#login"></a>
+            <span className='text-info me-2 fs-4'>Signed in as:</span>{user?.displayName} <a href="#login"></a>
         </Navbar.Text>
         </Navbar.Collapse>
 
